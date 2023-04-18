@@ -112,9 +112,9 @@ def main(args):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--base_dir", default="../VIPLO", type=str)
-    parser.add_argument("--model_checkpoint", default="models/vitpose-l.pth", type=str)
-    parser.add_argument("--config_path", default="configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/coco/ViTPose_large_coco_256x192.py", type=str)
+    parser.add_argument("--base_dir", default="./", type=str)
+    parser.add_argument("--model_checkpoint", default="ViTPose/models/vitpose-l.pth", type=str)
+    parser.add_argument("--config_path", default="ViTPose/configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/coco/ViTPose_large_coco_256x192.py", type=str)
     
     parser.add_argument('--image_dir', default="hicodet/hico_20160224_det/images/test2015", type=str)
     parser.add_argument('--det_json_dir', default="hicodet/detections/test2015_gt",type=str)
