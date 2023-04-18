@@ -67,7 +67,7 @@ model = dict(
         loss_keypoint=dict(type='JointsMSELoss', use_target_weight=True)),
     train_cfg=dict(),
     test_cfg=dict(
-        flip_test=True,
+        flip_test=False,
         post_process='default',
         shift_heatmap=False,
         target_type=target_type,
